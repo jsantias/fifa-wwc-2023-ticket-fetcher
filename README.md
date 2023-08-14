@@ -45,7 +45,9 @@ No more endless website loops, no more frantic logins. And guess what? It actual
 1. This script can yield false positives. While tickets might appear as "available" on the website, but they could actually be in the checkout process.
 2. Captchas and waiting rooms can disrupt the automation process for acquiring game tickets. These disruptions compelled me to perform certain steps manually, ensuring the smooth operation of my automation. This included occasionally signing out of my account, waiting for 5 minutes before rerunning the script, or extending the sleep timers to 60 seconds (line 30) in `main.py`. I had to run the script, complete captchas, and wait in the rooms to allow the script to proceed.
 3. The page refreshes every second (the optimal rate). Reducing this frequency could potentially overload FIFA's website or result in your IP being blocked.
-4. Once the script manages to add a ticket to your cart. Make sure to process the payment within 9 minutes. This and the rest of the steps are manual. 
+4. Once the script manages to add a ticket to your cart. Make sure to process the payment within 9 minutes. This and the rest of the steps are manual.
+5. The script only adds one adult ticket to your cart.
+6. Impossible to add independent child tickets to the cart as you need an accompanying adult seat.
 
 It would have been great to execute this script headlessly on a cloud server to automatically secure my tickets. However, as I mentioned earlier, this approach would be challenging due to the need for certain manual steps.
 
@@ -62,6 +64,7 @@ It would have been great to execute this script headlessly on a cloud server to 
 - Provide users with the choice to utilise either Chrome or Edge browsers.
 - Implement an automated mechanism for populating credit card information.
 - Enable the purchase of a specified quantity, n, of tickets.
+- Ability to add more than one ticket to the cart.
 
 ### Demo
 
