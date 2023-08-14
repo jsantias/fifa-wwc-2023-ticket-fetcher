@@ -72,8 +72,7 @@ It would have been great to execute this script headlessly on a cloud server to 
 Be sure to Star this repository and share it with your mates!
 
 ### Support
-
-[Buy me a coffee!]: https://bmc.link/jbsantias
+[Buy me a coffee!](https://bmc.link/jbsantias)
 
 # Go the Matildas!!!!
 
