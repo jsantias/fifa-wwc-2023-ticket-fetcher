@@ -1,0 +1,3 @@
+selenium
+slack_sdk
+load_dotenv
