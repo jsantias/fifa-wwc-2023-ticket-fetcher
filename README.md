@@ -65,7 +65,7 @@ It would have been great to execute this script headlessly on a cloud server to 
 
 ### Demo
 
-![Demo](https://github.com/jsantias/fifa-wwc-2023-ticket-fetcher/images/demo.gif)
+![Demo](https://github.com/jsantias/fifa-wwc-2023-ticket-fetcher/blob/main/images/demo.gif)
 
 ### Did this work?
 
@@ -79,4 +79,4 @@ Be sure to Star this repository and share it with your mates!
 
 My view at the Australia vs France game
 
-![IMG_9014](https://github.com/jsantias/fifa-wwc-2023-ticket-fetcher/images/IMG_9014.jpg)
+![IMG_9014](https://github.com/jsantias/fifa-wwc-2023-ticket-fetcher/blob/main/images/IMG_9014.jpg)
