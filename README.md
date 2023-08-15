@@ -36,9 +36,11 @@ No more endless website loops, no more frantic logins. And guess what? It actual
    HOOK_URL=<slack webhook url>
    ```
 
-3. In a new terminal, change directory to the repository folder and run `main.py`
+3. In a new terminal, change directory to the repository folder and run `pip3 install -r requirements.txt`
 
-4. Keep an eye out for a slack notification or your cart
+4. Now run `main.py`
+
+5. Keep an eye out for a slack notification or your cart
 
 ### Gotchas (IMPORTANT! MUST READ)
 

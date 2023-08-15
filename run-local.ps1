@@ -11,6 +11,9 @@ $password = Read-Host -Prompt 'Please provide your password'
 $target_url = Read-Host -Prompt 'Please provide the event url'
 $hook_url = Read-Host -Prompt 'Please provide a slack webhook url'
 
+# Install dependencies
+pip3 install -r $PSScriptRoot/requirements.txt
+
 # Saves user inputs to .env file
 Write-Host "======Saving inputs to .env file ======" -ForegroundColor Green
 "USERNAME=" + $username | Out-File -FilePath $PSScriptRoot\.env

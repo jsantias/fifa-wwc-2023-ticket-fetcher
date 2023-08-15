@@ -16,7 +16,7 @@ hook_url = os.getenv("HOOK_URL")
 chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
 
-driver = webdriver.Edge(options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 
 #ignore
 browser_session_url = driver.command_executor._url
