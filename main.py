@@ -27,7 +27,7 @@ print(session_id)
 
 driver.get(url)
 
-time.sleep(30)
+time.sleep(10)
 
 driver.find_element("id", 'signInName').send_keys(username)
 driver.find_element("id", 'password').send_keys(password)
@@ -37,13 +37,18 @@ time.sleep(15)
 driver.find_element("id", "onetrust-accept-btn-handler").click()
 
 while(True):
-    time.sleep(1)
+    time.sleep(0.5)
     try:
         driver.find_element(By.XPATH, ("//*[contains(text(),'Adult')]")).click()
         driver.find_element(By.XPATH, ("//*[contains(text(),'Add to cart')]")).click()
-        print("=================  HIT! =================")
-        send_notification(hook_url=hook_url, message="Adult tickets found! Check me")
-        break
+        time.sleep(0.5)
+        if (driver.find_element(By.XPATH, ("//*[contains(text(),'The ticket you have selected is currently unavailable.')]"))):
+            print("Ticket no longer. Trying again")
+            driver.get(url)
+        else:
+            print("=================  HIT! =================")
+            send_notification(hook_url=hook_url, message="Adult tickets found! Check me")
+            break
     except Exception as e:
-        print("Doesn't exist. Trying again")
+        print("Ticket doesn't exist. Trying again")
         driver.refresh()
